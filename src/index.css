@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+
+
+:root {
+
+  --mainColor: RGBA(255, 255, 255, 0.75);
+  --bg-main-color: #272b30;
+  --mainFont: 'Roboto', sans-serif;
+  --border-color: #1983e6ce
+}
+
+
+
+body {
+  background-color: var(--bg-main-color);
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+}
+
+.navbar {
+  border-bottom: rgba(28, 28, 28, .6) 1px solid;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--bg-main-color);
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  background-color: var(--mainColor);
+}
+
+.nav-Bar {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar-brand img {
+  width: 70px;
+}
+
+.nav-logo {
+  font-family: 'Xanh Mono', monospace;
+}
+
+.logo-img {
+  filter: drop-shadow(1px 1px 3px var(--border-color));
+
+}
+
+.logout {
+  color: var(--border-color);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+
+}
+
+.form {
+  background-color: RGB(50, 56, 62) !important;
+  color: RGB(170, 170, 170) !important;
+}
+
+.form input {
+  color: RGB(170, 170, 170) !important;
+}
+
+.form-bg-color {
+  background-color: #1c1e22 !important;
+}
+
+.names {
+  width: 48% !important;
+}
+
+button {
+  background-color: #3a3f44 !important;
+  color: #fff !important;
+  transition: all 0.5s;
+  border: none;
+
+}
+
+button:hover {
+  background-color: #fff !important;
+  color: #3a3f44 !important;
+
+}
+
+.home-container {
+  text-align: center;
+  background-image: url(components/Home/paladins.b44d33d6e7ee1ba8.png);
+
+  background-size: cover;
+
+}
+
+.caerd {
+  background-color: #32383e;
+}
+
+.col-md-3,
+.col-md-4 {
+  cursor: pointer;
+  transition: all 0.5s;
+  color: RGB(122, 130, 136) !important;
+  
+}
+
+.col-md-3:hover,
+.col-md-4:hover {
+  scale: +1.04;
+
+}
+
+/* loaging */
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.details:hover,
+.info:hover {
+  scale: 1 !important;
+  cursor: auto !important;
+}
+
+/* slider  */
+.slider {
+  width: 500px;
+
+  /* transform: translate(-50%,-50%); */
+
+  overflow: hidden;
+  /* border: 10px solid #ffffff; */
+  border-radius: 8px;
+  box-shadow: -1px 5px 15px black;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 6s infinite;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(0);
+  }
+
+  66% {
+    transform: translateX(-100%);
+  }
+
+  66% {
+    transform: translateX(-100%);
+  }
+
+  99% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+
+}
+
+.scrloo{
+  position: fixed;
+  top: 90%;
+  right: 4%;
+  
+}
